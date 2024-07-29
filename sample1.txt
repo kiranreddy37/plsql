@@ -1,1 +1,13 @@
 this is my first line of code start with plsql lang
+
+
+create or replace function update_emp(no emp.%type)is
+return varchar
+
+begin
+update emp set sal=sal+150 where empno=no;
+commit;
+end;
+
+
+
